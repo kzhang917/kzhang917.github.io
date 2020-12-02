@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="scripts.js"></script>
+    <title>Kevin Zhang</title>
+  </head>
+  <body>
+
+    <!-- HEADER; NAVBAR -->
+    <header>
+      <nav class="top-nav">
+        <ul>
+          <div class="nav-right">
+            <li><a href="index.html">My Projects</a></li>
+            <li><a href="bio.html">Bio</a></li>
+          </div>
+          <div class="nav-left">
+            <span id="header-name">Kevin Zhang</span>
+          </div>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- MAIN CONTENT; PROJECTS DESCRIPTION -->
+    <main>
+      <h1 id="projects-header">My Projects</h1>
+      <div class="project-container">
+        <figure class="project-figure">
+          <img src="images/NBA_project_plot.png" alt="NBA Project Plot" class="project-image">
+          <figcaption class="project-caption">This plot appears in my project report: the points are players, plotted on VORP, an advanced metric, vs points per game.
+          Blue points denote all-stars, and red points denote non all-stars.</figcaption>
+        </figure>
+        <h3 class="project-header">Predictive Modelling for NBA Players</h3>
+        <p class="project-description">In this project, I used predictive modelling to try and create a model that would predict which NBA players will
+        become future All-Stars, based on performance metrics from their first three years of playing. To do so, I first analyzed the data, then created
+        predictive models using various machine learning methods, such as logistic regression, ridge regression, and lasso.<br><br>
+        Overall, I found that predicting future all-stars with only performance metrics turned out to be quite difficult. This is because
+        many factors which go into the selection of all-stars, such as how popular a player is, which team or conference they play in, or the overall
+        talent level of the league in a given year. However, the model still performed reasonably well given that only performance metrics were used
+        from the first three years of a player's career. <br><br>
+        As a next step, I might try to incorporate the factors which I have mentioned into the predictive model, so as to hopefully improve its accuracy.
+        Or I may try and predict a different outcome, such as a player value rather than whether or not a player becomes an all-star.</p>
+        <div class="project-bottom"></div>
+      </div>
+
+      <div class="project-container">
+        <figure class="project-figure">
+          <img src="images/Covid_project_plot.png" alt="COVID-19 Project Plot" class="project-image">
+          <figcaption class="project-caption">This plot appears in my project report: the different colored lines reperesent either differing models for
+          COVID-19 death projections, or the actual reported numbers that these models were tested against. The date is indicated on the x-axis, and total
+          deaths are indicated on the y-axis. As can be seen, all of the models overpredicted the number of total deaths.</figcaption>
+        </figure>
+        <h3 class="project-header">Forecasting COVID-19 Deaths</h3>
+        <p class="project-description">In this project, I wanted to be able to predict the number of future deaths due to the COVID-19 Pandemic. To do so, I utilized various machine learning
+        and deep learning methods to create predictive, time-series models. Although I considered a wide variety of predictor variables which might help improve the accuracy of the results,
+        I found that many of these variables were not altogether significant enough to warrant including them. For the predictive models, I mainly used a combination of daily death totals
+        and Google's mobility data to predict future deaths. <br><br>
+        In summary, I found that the models performed similarly on national level, with ridge regression and gradient boosting being the two best performing models. In general, the models
+        overestimated the death totals on a national scale, but not by too great of a margin. The models tended to create a more linear forecast, whereas in reality, the death total was increasing
+        at a decreasing rate during the timeframe in which the models were tested. However, the models were able to detect a weekday effect, where less deaths were tallied during weekends. <br><br>
+        I would consider this project to be a success, in that I was able to successfully setup a pipeline into which data can be fed, transformed, and then predictions can be made using
+        machine learning. However, further steps could be made to improve the model. Currently, the model is only able to forecast two weeks into the future. By creating other models that
+        also predict mobility data into the future, this forecast could be greatly extended. In addition, more modelling and analysis could be done to incorporate more predictors into the model
+        which would ideally improve accuracy<span id="dots">...</span>
+        <span class="project-description" id="more"><br> For a more specific description of how predictions were generated, I made the assumption that only mobility data from at least two weeks ago
+        would be relevant in predicting the number of deaths on a particular day. Therefore, since only mobility data from two weeks ago is needed. Each new prediction of daily deaths made can
+        then be used to predict the next day's deaths, thus allowing for the models to predict two weeks into the future. If there were models which could forecast mobility data, then this
+        timeframe could be further extended.<br><br>
+        For this project, exploratory data analysis, including various forms of clustering, were conducted, although the clusterings were not later used in predictive modelling, as there was
+        little correlation between the clusters and the relevant statistics.</span>
+        </p>
+        <button onclick="myFunction()" id="myBtn">Read more</button>
+        <div class="project-bottom"></div>
+      </div>
+    </main>
+
+    <!-- PAGE FOOTER -->
+    <footer>
+      <div id="social-media-section">
+        <h3 class="social-media-header">Connect With Me</h3>
+        <div class="social-media-icons">
+          <a href="https://www.facebook.com/kvjzg/" class="fa fa-facebook" alt="Facebook"></a>
+          <a href="https://twitter.com/k3vzx" class="fa fa-twitter" alt="Twitter"></a>
+        </div>
+        <div class="social-media-icons">
+          <a href="https://www.instagram.com/kevkkkkkh/" class="fa fa-instagram" alt="Instagram"></a>
+          <a href="https://www.linkedin.com/in/kevin-zhang-a30a5b157/" class="fa fa-linkedin" alt="LinkedIn"></a>
+        </div>
+      </div>
+      <h3 class="footer-text-header">Contact Me</h3>
+      <address>
+        <div class="footer-text">Email: <a href="mailto:kevinzhang2021.2@u.northwestern.edu">kevinzhang2021.2@u.northwestern.edu</a></div>
+        <div class="footer-text">Phone: (513) 504-8841</div>
+        <div class="footer-text">Address: 1940 Sherman Ave, Apt #201. Evanston, IL, 60201</div>
+      </address>
+    </footer>
+  </body>
+</html>

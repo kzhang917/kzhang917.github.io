@@ -1,0 +1,232 @@
+* {
+  font-family: helvetica, sans-serif;
+}
+
+body {
+  margin: 0px;
+    background-color: #E7C27D;
+}
+
+li a {
+  color: inherit;
+}
+
+nav.top-nav {
+  background-color: #F2F0E6;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  box-shadow: 0px 4px 6px #0003;
+  padding-left: 2em;
+  padding-bottom: 15px;
+}
+
+nav.top-nav ul {
+  list-style: none;
+}
+
+nav.top-nav li {
+  font-weight: bold;
+  color: #A7A094;
+  margin: 5px;
+  display: inline-block;
+  padding: 2px;
+  user-select: none;
+  position: relative;
+}
+
+nav.top-nav li:hover {
+  text-decoration: underline;
+}
+
+nav.top-nav li:active {
+  color: #fff;
+}
+
+.nav-left {
+  float: left;
+
+}
+
+.nav-right {
+  float: right;
+  position: relative;
+  left: -200px;
+}
+
+
+#header-name {
+  font-size: 1.4em;
+  font-weight: bold;
+  color: #222;
+  position: relative;
+  left: 130px;
+  text-shadow: 0px 2px 3px #555;
+}
+
+#banner-image-container {
+}
+
+#banner-image {
+  width: 30%;
+  float: right;
+  padding: 200px;
+}
+
+#banner {
+  margin-top: 64px;
+}
+
+.banner-text {
+  padding-left: 200px;
+  clear: left;
+  width: 50%;
+  line-height: 1.8;
+}
+
+#banner-header {
+  padding-top: 200px;
+}
+
+
+
+footer {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  background-color: #96351E;
+  color: #A7A094;
+  padding-bottom: 20px;
+}
+
+.footer-text {
+  padding-left: 200px;
+  margin-bottom: 5px;
+  clear: left;
+}
+
+.footer-text-header {
+  padding-left: 200px;
+  margin-top: 30px;
+  clear: left;
+}
+
+#social-media-section {
+  float: right;
+}
+
+.social-media-header {
+
+  margin-top: 30px;
+  padding-right: 200px;
+  display: block;
+}
+
+/* Styling of Social Media Icons */
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.social-media-icons {
+  position: relative;
+  left: -30px;
+}
+
+/* Projects - Landing Page */
+#projects-header {
+  margin-top: 200px;
+  margin-left: 200px;
+}
+
+.project-container {
+  margin-left: 170px;
+  margin-right: 170px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: #a9c0a6;
+  border-radius: 5px;
+  border: 2px solid white;
+  margin-bottom: 250px;
+  vertical-align: middle;
+}
+
+.project-header {
+  margin-left: 30px;
+  margin-bottom: 30px;
+  float: left;
+}
+
+.project-description {
+  margin-left: 30px;
+  line-height: 1.8;
+  width: 800px;
+  float: left;
+}
+
+.project-figure {
+  float: right;
+  width: 35%;
+  padding: 50px;
+  padding-top: 70px;
+  overflow: hidden;
+}
+
+.project-image {
+  height: 400px;
+  width: 600px;
+}
+
+.project-caption {
+  margin-top: 15px;
+}
+
+.project-bottom {
+  clear: both;
+  margin-bottom: 30px;
+}
+
+#more {
+  display: none;
+  margin-left: 0px;
+}
+
+#myBtn {
+  margin-left: 30px;
+  line-height: 1.8;
+  width: 200px;
+  clear: both;
+  display: block;
+}
